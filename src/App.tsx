@@ -1,9 +1,7 @@
-import { useState } from 'react'
+import { RouterProvider } from "react-router-dom";
+import { AppRoutes } from './routes'
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return <p>Hello Word!</p>
+export const App = () => {
+  return <RouterProvider router={AppRoutes} />
 }
 
-export default App
