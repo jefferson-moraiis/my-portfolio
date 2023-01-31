@@ -1,12 +1,26 @@
 import { createBrowserRouter } from 'react-router-dom';
+import * as page from '../pages'
+
 
 export const AppRoutes =  createBrowserRouter([
     {
-      path: "/",
-      element: <div>Hello world!</div>,
+      path: '*',
+      element: page.Home()
     },
-    {
-      path: "/home",
-      element: <div>Hello Home!</div>,
-    },
-  ]) 
+    // {
+    //   path: '/about',
+    //   element: page.About()
+    // },
+    // {
+    //   path: '/contact',
+    //   element: page.Contact()
+    // },
+    // {
+    //   path: '/projects',
+    //   element: page.Projects()
+    // },
+    // {
+    //   path: '/tech',
+    //   element: page.TechStack()
+    // }
+]); 
